@@ -8,3 +8,5 @@ $data.itens | Where-Object { $_.nome -like "*Porca*" }
 But you add texts for more simple read on terminal:
 
 "Status: ", $data.status, "Version: ", $data.versao, $data.itens
+
+<img width="615" height="300" alt="image" src="https://github.com/user-attachments/assets/4e1346fc-9662-4c3b-87fb-a9e3fecc6a77" />
