@@ -229,6 +229,19 @@
   let searchText = '';
   let statusFilter = 'all';
 
+  const searchInput = document.getElementById('search');
+  const dropdown = document.getElementById('filterDropdown');
+
+  searchInput.addEventListener('focus', () => {
+    dropdown.style.display = 'block';
+  });
+
+  document.addEventListener('click', e => {
+    if (!e.target.closest('.search')) {
+      dropdown.style.display = 'none';
+    }
+  });
+
   fetch('https://douglasribeirosanguino.github.io/dataTestJsonAPI/dataTestJson.json')
     .then(r => r.json())
     .then(data => {
