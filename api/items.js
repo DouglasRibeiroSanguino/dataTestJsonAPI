@@ -1,9 +1,9 @@
-import items from '../data/dataItems.json';
+import data from '../data/dataItems.json';
 
 export default function handler(req, res) {
   const { search, active } = req.query;
 
-  let result = items;
+  let result = data.items;
 
   if (search) {
     result = result.filter(i =>
