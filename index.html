@@ -1,0 +1,32 @@
+<input id="search" placeholder="Search item..." />
+
+<ul id="list"></ul>
+
+<script>
+let items = [];
+
+fetch('https://douglasribeirosanguino.github.io/dataTestJsonAPI/dataTestJson.json')
+  .then(r => r.json())
+  .then(data => {
+    items = data.items;
+    render(items);
+  });
+
+document.getElementById('search').addEventListener('input', e => {
+  const value = e.target.value.toLowerCase();
+  const filtered = items.filter(i =>
+    i.name.toLowerCase().includes(value)
+  );
+  render(filtered);
+});
+
+function render(list) {
+  const ul = document.getElementById('list');
+  ul.innerHTML = '';
+  list.forEach(i => {
+    const li = document.createElement('li');
+    li.textContent = `${i.name} (${i.specification ?? ''})`;
+    ul.appendChild(li);
+  });
+}
+</script>
