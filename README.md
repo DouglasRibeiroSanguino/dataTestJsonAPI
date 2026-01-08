@@ -8,11 +8,11 @@ https://douglasribeirosanguino.github.io/dataTestJsonAPI/index
 
 $data = Invoke-RestMethod https://douglasribeirosanguino.github.io/dataTestJsonAPI/dataTestJson.json
 
-this filter below is used only you need infos like a "Porca"
-$data.itens | Where-Object { $_.nome -like "*Porca*" }
+this filter below is used only you need infos like a "NUT"
+$data.items | Where-Object { $_.name -like "*NUT*" }
 
 But you add texts for more simple read on terminal:
 
-"Status: ", $data.status, "Version: ", $data.versao, $data.itens
+"Status: ", $data.status, "Version: ", $data.version, $data.items
 
 <img width="615" height="300" alt="image" src="https://github.com/user-attachments/assets/4e1346fc-9662-4c3b-87fb-a9e3fecc6a77" />
