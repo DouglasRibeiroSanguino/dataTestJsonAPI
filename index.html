@@ -243,7 +243,7 @@
     }
   });
 
-  fetch('https://douglasribeirosanguino.github.io/dataTestJson/dataTestJson.json')
+  fetch('https://inventory-api.vercel.app/api/items?active=true')
     .then(r => r.json())
     .then(data => {
       items = data.items;
