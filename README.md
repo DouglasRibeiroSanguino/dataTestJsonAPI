@@ -5,6 +5,7 @@ https://douglasribeirosanguino.github.io/dataTestJsonAPI/index
 <img width="548" height="434" alt="image" src="https://github.com/user-attachments/assets/0d75715f-cdaa-496f-807e-5456cba7b5d4" />
 
 ========= VS Code =========
+
 $data = Invoke-RestMethod https://douglasribeirosanguino.github.io/dataTestJsonAPI/dataTestJson.json
 
 this filter below is used only you need infos like a "Porca"
