@@ -1,4 +1,4 @@
-import items from '../data/items.json';
+import items from '../data/dataItems.json';
 
 export default function handler(req, res) {
   const { search, active } = req.query;
