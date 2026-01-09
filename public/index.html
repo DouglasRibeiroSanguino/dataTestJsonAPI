@@ -277,6 +277,20 @@
     <div id="grid" class="grid"></div>
   </div>
 
+  <div id="itemModal" class="modal">
+    <div class="modal-card">
+      <h2 id="modalName"></h2>
+
+      <div class="modal-row"><strong>Category:</strong> <span id="modalCategory"></span></div>
+      <div class="modal-row"><strong>Specification:</strong> <span id="modalSpec"></span></div>
+      <div class="modal-row"><strong>Supplier:</strong> <span id="modalSupplier"></span></div>
+      <div class="modal-row"><strong>Status:</strong> <span id="modalStatus"></span></div>
+      <div class="modal-row"><strong>Quantity:</strong> <span id="modalQty"></span></div>
+
+      <button class="modal-close" onclick="closeModal()">Close</button>
+    </div>
+  </div>
+
   <script>
     let items = [];
     let searchText = '';
@@ -394,20 +408,6 @@
     });
 
   </script>
-
-  <div id="itemModal" class="modal">
-    <div class="modal-card">
-      <h2 id="modalName"></h2>
-
-      <div class="modal-row"><strong>Category:</strong> <span id="modalCategory"></span></div>
-      <div class="modal-row"><strong>Specification:</strong> <span id="modalSpec"></span></div>
-      <div class="modal-row"><strong>Supplier:</strong> <span id="modalSupplier"></span></div>
-      <div class="modal-row"><strong>Status:</strong> <span id="modalStatus"></span></div>
-      <div class="modal-row"><strong>Quantity:</strong> <span id="modalQty"></span></div>
-
-      <button class="modal-close" onclick="closeModal()">Close</button>
-    </div>
-  </div>
 
 </body>
 
